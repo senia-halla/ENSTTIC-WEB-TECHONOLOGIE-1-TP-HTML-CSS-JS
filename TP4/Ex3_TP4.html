@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice 3</title>
+  </head>
+  <body>
+    <form action="traitement.php" method="post">
+      <fieldset>
+        <legend>Sondage Pour Les AutoMobiliste</legend>
+
+        <div>
+          <label for="sexe"> Sexe </label>
+
+          <label>
+            <input type="radio" id="sexe" name="sexe" value="homme" /> Homme
+          </label>
+
+          <label>
+            <input type="radio" id="sexe" name="sexe" value="femme" /> Femme
+          </label>
+        </div>
+        <br />
+
+        <div>
+          <label> Age </label>
+          <input type="number" />
+        </div>
+        <br />
+        <div>
+          <label for="motorisation">Motorisation : </label>
+          <label>
+            <input
+              type="radio"
+              id="motorisation"
+              name="motorisation"
+              value="essence"
+            />
+            Essence
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              id="motorisation"
+              name="motorisation"
+              value="diesel"
+            />
+            Diesel
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              id="motorisation"
+              name="motorisation"
+              value="electrique"
+            />
+            Electrique
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              id="motorisation"
+              name="motorisation"
+              value="hybrid"
+            />
+            Hybrid
+          </label>
+        </div>
+        <br />
+
+        <div>
+          <label for="marque"> Marque </label>
+          <select name="marque" id="marque">
+            <option value="clio">Clio</option>
+            <option value="checrolet">Cheverolet</option>
+            <option value="toyota">Toyota</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            <option value="tesla">Tesla</option>
+          </select>
+        </div>
+        <br />
+
+        <div>
+          <label for="km">Kilometrage Annuel Moyen :</label>
+          <input type="number" name="km" id="km" />
+        </div>
+      </fieldset>
+      <br />
+      <button type="submit" name="valider" value="valider">Valider</button>
+    </form>
+  </body>
+</html>

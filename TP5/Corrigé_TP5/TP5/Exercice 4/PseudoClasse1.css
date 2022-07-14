@@ -1,0 +1,13 @@
+/* PseudoClasse.css */
+p:first-child {
+	color: blue;
+	background-color: yellow;
+}
+
+p i:first-child {
+	font-size: xx-large;
+} 
+
+p i:last-child {
+	color: red;
+}

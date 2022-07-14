@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercices sur les tableaux</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		th, td {
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even){background-color: #f2f2f2}
+
+		th {
+			background-color: black;
+			color: white;
+		}
+		caption {
+			font-size: 25px;
+		}
+		
+		.img1 {
+			border-radius: 20px;
+		}
+		
+		.img2 {
+			border-radius: 50%;
+		}
+		
+		img:hover ~ p{
+			color: blue;
+			
+		}
+	</style>
+</head>
+<body>	
+	<h2>Image de plage</h2>
+	<div><img class="img1" src="./img/plage.jpg" alt="Plage" width="300" height="200">
+	<p>Plage de ......avec border-radius de 20px</p></div>
+	<div><img class="img2" src="./img/plage.jpg" alt="Plage" width="300" height="200">
+	<p>Plage de ......avec border-radius de 50%</p></div>
+</body>
+</html>

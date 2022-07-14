@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 7</title>
+    <style type="text/css">
+      table {
+        border-collapse: collapse;
+        width: 60%;
+        margin: auto;
+      }
+      thead {
+        background-color: rgb(0, 102, 255);
+        color: white;
+
+      }
+      tr:nth-of-type(even){
+        background-color: rgb(230, 230, 230);
+      }
+      td, th {
+        border: 1px solid rgb(230,230,230);
+        text-align: right;
+        padding: 5px;
+        font-family: arial,sans-serif;
+      }
+      tfoot > tr > td:first-child {
+        text-align: center;
+      }
+      div {
+        background-color: grey;
+        height: 60px;
+      }
+      h1{
+        margin-left: 20px;
+        color: white;
+        font-family: arial,sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+        <h1>Ticket de la caisse 3</h1>
+    </div>
+    <br><br>
+    <table>
+      <thead>
+        <tr>
+          <th>Produit</th>
+          <th>Prix Unitaire</th>
+          <th>Quantité</th>
+          <th>Prix</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lait Candia</td><td>85.00</td><td>02</td><td>170.00</td>
+        </tr>
+        <tr>
+          <td>Couscous Mama</td><td>125.00</td><td>01</td><td>125.00</td>
+        </tr>
+        <tr>
+          <td>Eau LalaKhedidja</td><td>155.00</td><td>03</td><td>465.00</td>
+        </tr>
+        <tr>
+          <td>Huile Fleurial 4.l</td><td>660.00</td><td>01</td><td>660.00</td>
+        </tr>
+        <tr>
+          <td>Farine Safina 1.kg</td><td>55.00</td><td>02</td><td>110.00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total </td><td>1530.00</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

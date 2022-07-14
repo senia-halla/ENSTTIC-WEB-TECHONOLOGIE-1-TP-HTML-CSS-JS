@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Ex3_TP6.css" />
+    <title>Ex3-TP6</title>
+  </head>
+  <body>
+    <form name="form2" action="traiter_formulaire.php" method="post">
+      <fieldset>
+        <legend>Sondage pour les automobilistes :</legend>
+        <div>
+          <label class="l"></label>
+          <input type="radio" name="sexe" value="homme" />
+          <label> Homme</label>
+          <input type="radio" name="sexe" value="femme" />
+          <label> Femme</label>
+        </div>
+
+        <div>
+          <label class="l" for="ageid">Age : </label
+          ><input type="number" name="age" min="18" step="1" id="ageid" />
+        </div>
+        <div>
+          <label class="l" for="motoid">Motorisation : </label>
+          <input type="radio" name="motor" value="essence" id="essid" /><label
+            for="essid"
+          >
+            Essence</label
+          >
+          <input type="radio" name="motor" value="diesel" id="dieid" /><label
+            for="dieid"
+          >
+            Diesel</label
+          >
+          <input
+            type="radio"
+            name="motor"
+            value="electrique"
+            id="eleid"
+          /><label for="eleid"> Electrique</label>
+          <input type="radio" name="motor" value="hybride" id="hybid" /><label
+            for="hybid"
+          >
+            Hybride</label
+          >
+        </div>
+        <div>
+          <label class="l" for="marqid">Marque : </label>
+          <select name="cars" id="marqid">
+            <option value="volvo">Volvo</option>
+            <option value="ford">Ford</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <div>
+          <label class="l" for="kmid">Kilom&eacute;trage annuel moyen : </label
+          ><input type="text" name="dist" id="kmid" />
+        </div>
+      </fieldset>
+      <br />
+      <input type="submit" value="Valider" />
+      <input type="reset" value="Annuler" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP8 - Exercice 02</title>
+  </head>
+  <body onload="admis_eclu()">
+    <p id="result"></p>
+    <script type="text/javascript">
+      function admis_eclu() {
+        var moy = prompt("Quel est votre moyenne ? ");
+        var text;
+        var choix;
+        /* if (moy >= 10 && moy < 20) text = "Admis";
+        else if (moy > 5 && moy < 10) text = "Ajourné";
+        else text = "Exclu";
+        document.getElementById("result").innerHTML=text;*/
+        if (moy >= 10 && moy < 20) choix = 0;
+        else if (moy > 5 && moy < 10) choix = 1;
+        else choix = 2;
+
+        switch (choix) {
+          case 0:
+            text = "Admis";
+            break;
+          case 1:
+            text = "Ajourné";
+            break;
+          case 2:
+            text = "Exclu";
+            break;
+          default:
+            text = error;
+            break;
+        }
+        document.getElementById("result").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>

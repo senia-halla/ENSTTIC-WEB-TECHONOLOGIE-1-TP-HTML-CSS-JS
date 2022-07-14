@@ -1,0 +1,36 @@
+fieldset {
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+}
+
+input[type="submit"] {
+  background-color: white;
+  color: green;
+  border: 3px solid green;
+  border-radius: 15px;
+  width: 150px;
+}
+
+input[type="reset"] {
+  background-color: white;
+  color: red;
+  border: 3px solid red;
+  border-radius: 15px;
+  width: 150px;
+}
+
+
+
+label.l {
+  width: 200px;
+  text-align: right;
+}
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+* {
+  padding: 3px;
+}

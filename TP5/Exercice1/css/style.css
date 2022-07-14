@@ -1,0 +1,25 @@
+h1 {
+  color: green;
+}
+
+#p1 {
+  color: blue;
+  font-size: x-large;
+  font-family: arial;
+}
+
+#p2 {
+  color: red;
+  font-size: xx-large;
+  font-family: verdana;
+}
+
+#p3 {
+  color: red;
+  font-size: small;
+  font-family: arial;
+}
+
+ul {
+  color: blue;
+}

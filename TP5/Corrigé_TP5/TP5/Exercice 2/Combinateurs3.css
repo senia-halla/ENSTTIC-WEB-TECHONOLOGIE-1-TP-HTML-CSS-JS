@@ -1,0 +1,4 @@
+/* Combinateurs.css */
+div ~ p {
+    background-color: orange;
+}

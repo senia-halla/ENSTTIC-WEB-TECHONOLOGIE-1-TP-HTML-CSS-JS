@@ -1,0 +1,50 @@
+form {
+  font-family: Tahoma, Geneva, sans-serif;
+  width: 350px;
+  margin: auto;
+
+  position: relative;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+}
+fieldset {
+  position: relative;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+}
+
+input[type="submit"] {
+  background-color: white;
+  color: green;
+  border: 3px solid green;
+  border-radius: 15px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+input[type="reset"] {
+  background-color: white;
+  color: red;
+  border: 3px solid red;
+  border-radius: 15px;
+  width: 100px;
+}
+
+span {
+  display: block;
+  font-size: 14px;
+}
+
+input {
+  display: block;
+  margin: 0px 0px 10px 0;
+  border: 1px solid #999;
+}
+
+div.button {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}

@@ -1,0 +1,123 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: #333;
+  color: #f2f2f2;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+header h1 {
+  margin-left: 15px;
+}
+
+nav {
+  float: right;
+  padding-right: 80px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  display: block;
+}
+
+nav a {
+  margin-left: 15px;
+  color: #f2f2f2;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: #f2f2f2;
+}
+
+nav a:hover {
+  font-weight: bold;
+  text-shadow: 0px 1px 0px;
+}
+
+.articles {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 120px;
+  padding-top: 10px;
+}
+
+.articles article {
+  float: left;
+  width: 45%;
+  padding: 2%;
+  text-align: justify;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+.photos {
+  clear: left;
+  width: 80%;
+  margin-left: 10%;
+  padding: 0px;
+}
+
+figure {
+  float: left;
+  width: 30%;
+  padding: 1%;
+  border: 1px solid #ccc;
+  margin: 0px;
+}
+
+figure img {
+  width: 100%;
+}
+
+figure figcaption {
+  text-align: center;
+}
+
+figure:hover {
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.contact {
+  clear: left;
+  width:100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact form {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0%);
+  background-color: #333;
+  color: #f2f2f2;
+  margin-bottom: 20px;
+  width: 400px;
+}
+input, textarea {
+  display: block;
+  margin: 10px;
+  width: 94%;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 25px;
+  background-color: #9a9c9e;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Comic Sans MS", sans-serif;
+  border-radius: 20px;
+  width: 25%;
+}

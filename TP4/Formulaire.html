@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire De Validation</title>
+  </head>
+  <body>
+    <form action="validateur.php" method="post">
+      <!--L'attribut method par defaut est get-->
+
+      <fieldset>
+        <!--1ere partie-->
+        <legend>Step 1 : Your Details</legend>
+        <div>
+          <label for="FLname">Name</label>
+          <input
+            type="text"
+            name="FLname"
+            id="FLname"
+            placeholder="First And Last Name "
+          />
+        </div>
+        <br />
+
+        <div>
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@domaine.com"
+          />
+        </div>
+        <br />
+
+        <div>
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Eg.0552000000"
+          />
+        </div>
+        <br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <!--2eme partie-->
+        <legend>Step 2 : Dilevery Adress</legend>
+
+        <div>
+          <label for="adress">Adress</label>
+          <textarea name="adress" id="adress" cols="30" rows="10"></textarea>
+        </div>
+        <br />
+
+        <div>
+          <label for="postcode">Postcode</label>
+          <input type="text" name="postcode" id="postcode" pattern="[0-9]{5}" />
+        </div>
+        <br />
+
+        <div>
+          <label for="country">Country</label>
+          <input type="text" name="country" id="country" />
+        </div>
+        <br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <!--3eme partie-->
+        <legend>Step 3 : Card Detail</legend>
+
+        <div>
+          <label for="card-type">Card Type</label>
+
+          <label>
+            <input
+              type="radio"
+              name="card-type"
+              id="card-type"
+              value="visa"
+              checked
+            />Visa</label
+          >
+
+          <label>
+            <input
+              type="radio"
+              name="card-type"
+              id="card-type"
+              value="AmEx"
+            />AmEx</label
+          >
+
+          <label>
+            <input
+              type="radio"
+              name="card-type"
+              id="card-type"
+              value="Masterclass"
+            />Masterclass</label
+          >
+        </div>
+        <br />
+
+        <div>
+          <label for="card-number">Card Number</label>
+          <input
+            type="text"
+            name="card-number"
+            id="card-number"
+            pattern="[0-9]{10}"
+          />
+        </div>
+        <br />
+
+        <div>
+          <label for="security-code">Security Code</label>
+          <input type="password" name="security-code" id="security-code" />
+        </div>
+        <br />
+
+        <div>
+          <label for="name-card">Name On Card</label>
+          <input
+            type="text"
+            name="name-card"
+            id="name-card"
+            placeholder="Exact name as on the card "
+          />
+        </div>
+        <br />
+      </fieldset>
+
+      <br />
+
+      <button type="button" name="buy-it" value="buy-it">Buy It!</button>
+    </form>
+  </body>
+</html>

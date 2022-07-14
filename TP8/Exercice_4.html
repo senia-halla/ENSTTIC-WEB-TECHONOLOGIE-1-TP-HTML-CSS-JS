@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP8 - Exercice 04</title>
+  </head>
+  <body>
+    <h1>Conjugaison D'un Verbe du 1er Groupe</h1>
+    <label>Saisissez un verbe du 1 er Groupe : </label>
+    <input type="text" , id="verbe" />
+    <input type="submit" name="conjuger" onclick="conjuger()" />
+    <div id="here0"></div>
+    <div id="here1"></div>
+    <div id="here2"></div>
+    <div id="here3"></div>
+    <div id="here4"></div>
+    <div id="here5"></div>
+    <div id="here"></div>
+
+    <script type="text/javascript">
+      function conjuger() {
+        var verbe = document.getElementById("verbe").value;
+        if (verbe[verbe.length - 2] == "e" && verbe[verbe.length - 1] == "r") {
+          verbe = verbe.substring(0, verbe.length - 2);
+          var p = ["Je", "Tu", "Il/Elle", "Nous", "Vous", "Ils/Elles"];
+          var terminaison = ["e", "es", "e", "ons", "ez", "ent"];
+          var var_conj = [];
+          for (var i = 0; i < 6; i++) {
+            var_conj[i] = p[i] + " " + verbe + terminaison[i];
+          }
+          for (var i = 0; i < 6; i++) {
+            document.getElementById("here" + i).innerHTML = var_conj[i];
+          }
+        } else {
+          document.getElementById("here").innerHTML =
+            "Ceci n'est pas une verbe du 1 er Groupe";
+        }
+      }
+    </script>
+  </body>
+</html>

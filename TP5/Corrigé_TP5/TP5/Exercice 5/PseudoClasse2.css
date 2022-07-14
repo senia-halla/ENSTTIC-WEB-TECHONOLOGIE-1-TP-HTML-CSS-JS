@@ -1,0 +1,9 @@
+/* PseudoClasse.css */
+p:only-child {
+	color: white;
+	background-color: red;	
+}
+
+p:nth-last-child(2) {
+	background: yellow;
+}
